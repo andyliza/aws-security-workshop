@@ -25,7 +25,7 @@ connection.
 
 ![prerequisites lab](images//1d057a6d465f25b6ff1842ee465ab08d.png)
 
-2) Provide a name for your environment - you can name it ___BKKSecurity___
+2) Provide a name for your environment - you can name it ___SecurityImmersionDay___
 
 ![images/](images/cloud9-environment-name.png)
 
@@ -59,14 +59,16 @@ git clone https://github.com/andyliza/aws-security-workshop.git
 8) Once the repository is cloned, please depoloy the CloudFormation template using the following command:
 
 ```
-aws cloudformation create-stack --template-body file://./aws-security-workshop/Cloudformation/security-workshop.json --stack-name bkksecuritychallenge2019 --capabilities CAPABILITY_NAMED_IAM --parameters ParameterKey=InstanceType,ParameterValue=t2.small ParameterKey=KeyName,ParameterValue=TechShift-KeyPair ParameterKey=RDSPassword,ParameterValue=techshift2019 ParameterKey=RDSUsername,ParameterValue=admin ParameterKey=VPCCIDR,ParameterValue=172.4.0.0/16
+aws cloudformation create-stack --template-body file://./aws-security-workshop/Cloudformation/security-workshop.json --stack-name securitychallenge2020 --capabilities CAPABILITY_NAMED_IAM --parameters ParameterKey=InstanceType,ParameterValue=t2.small ParameterKey=KeyName,ParameterValue=techshift-keypair ParameterKey=RDSPassword,ParameterValue=techshift2019 ParameterKey=RDSUsername,ParameterValue=admin ParameterKey=VPCCIDR,ParameterValue=172.4.0.0/16
 
 ```
 
 9) Once the installation begins you can check the status of the deployement using this command:
 
+**:heavy_exclamation_mark: All parameters are case sensitive**
+
 ```
-aws cloudformation describe-stacks --stack-name bkksecuritychallenge2019 \
+aws cloudformation describe-stacks --stack-name securitychallenge2020 \
                                    --query 'Stacks[0].StackStatus' \
                                    --output text
 ```
