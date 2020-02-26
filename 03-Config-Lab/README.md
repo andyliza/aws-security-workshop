@@ -16,11 +16,11 @@
 ![images](images/036c0dde57bac060954ae8fc4ff8c332.png)
 
 4)  Select the following 3 rules:
-* vpc-sg-open-only-to-authorized-ports
+* ec2-instance-detailed-monitoring-enabled
 * cloudtrail-enabled 
 * multi-region-cloudtrail-enabled
 
-**:heavy_exclamation_mark: Use the search bar to find them** Click *Next* once done.
+**:heavy_exclamation_mark: Use the search bar to find them.** Click *Next* once done.
 
 ![images](images/a6966fb42a24a42322f3a8f6b6fcef18.png)
 
@@ -41,46 +41,36 @@
 
 ![images](images/7d7b49f223c61764d8af1d1a00f597cb.png)
 
-As we can see there is an alarm raised. This alarm states that we are not
-streaming the CloudTrail logs to CloudWatch. Let’s proceed and remediate this
+As we can see there is an alarm raised. This alarm states that there is an EC2 instance that does not have "Detailed Monitoring" Enabled. Let’s proceed and remediate this
 alarm.
 
-9)  Go to CloudTrail console – to do so search CloudTrail in the AWS Search
-    Service bar. Once on the console click on *View Trails* and click on the
-    trail created previously.
+9)  Lets click on the alarm and see what EC2 instance does not comply with our configuration rule. Take note of the instance ID so we can remediate this alarm.
 
-10)  In the configuration page, under the CloudWatch Logs section press the
-    *Configure*.
+![images](images/config-bad-rule.png)
+
+10)  Now that we have the EC2 instance that is not compliant let's go and enable the "Detaied Monitoring". Go to the *EC2 console* and under __Instances__ search for the 
+instance ID that has the alarm. 
 
 ![images](images/6ca4ad538d4c9721fa5ee1deaf09ea43.png)
 
-11)  Leave the default log group suggested by the wizard and press *Continue*.
+11)  Click on the monitoring tab after selecting the EC2 instance and then click __"Enable Detailed Monitoring"__.
 
 ![images](images/a857e16c7e873ae562fe0e594698d396.png)
 
-12)  Press *Allow* to have an IAM role created to allow CloudTrail to push logs
-    to CloudWatch.
+12)  Click __Yes, Enable__ and then click __Close__ .
 
-![images](images/28cbbb799d10a2c90b2d82e1aa524aad.png)
+![images](images/yes-enable-dm.png)
 
-13)  Once created you will see the *Log group* and *IAM role* created in the
-    CloudTrail configuration of the trail created earlier.
+13)  After enbling the detail monitoring, return to the AWS Config Console and re-evaluate the rule that shows and alarm.
 
 ![images](images/351dc23980958dc249d36d40ee4301e0.png)
 
-14)  Now let’s go back to AWS Config and click on
-    *cloud-trail-watch-logs-enabled*.
+Refresh the page a couple of times and the alarm should dissapear.
 
-![images](images/b2f084545b9dd8d85b38518c78ee719b.png)
+![images](images/no-alarms-config.png)
 
-15)  Click *Re-evaluate* to have AWS Config check if the corrective measures have
-    been successfully applied
+14) Check also the dashboard and make sure that no alarms are being reported
 
-![images](images/6135dc8f7b6170dd7e52af1695b18071.png)
+![images](images/dashboard-all-ok.png)
 
-16)  Refresh the console a couple of times. If the corrective measures have been
-    successfully applied you will see that the alarm has disappeared.
-
-![images](images/abe46a92e787db537b7921389463db05.png)
-
-Proceed to the [next lab (KMS Lab)](../04-KMS-Lab/README.md)
+Now that all the alarms dissapeared we can proceed to the [next lab (KMS Lab)](../04-KMS-Lab/README.md)
