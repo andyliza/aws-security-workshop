@@ -43,7 +43,7 @@ connection.
 
 5) Now you have an IDE in the cloud.
 
-![images/](images/6bf8fc54f1f01e9eda93a8dc95f5dccd.png)
+![images/](images/6bf8fc54f1f01e9eda93a8dc95f5dccd1.png)
 
 6) Click on *Open IDE*
 
