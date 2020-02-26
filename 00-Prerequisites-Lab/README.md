@@ -81,4 +81,8 @@ aws cloudformation describe-stacks --stack-name securitychallenge2020 \
 
  **:heavy_exclamation_mark: DO NOT move past this point until you see CREATE_COMPLETE as the status for your CloudFormation stack**
 
+Once the template is deployed the following architecture will be present in your account
+
+![images/](images/secimmersionday.png)
+
 10) When you see that the operation has been completed successfully move to the [first lab (CloudTrail)](../01-CloudTrail-Lab/README.md)
