@@ -20,8 +20,7 @@
 * cloudtrail-enabled 
 * multi-region-cloudtrail-enabled
 
- Use the search bar to find them. Click
-    *Next* once done.
+**:heavy_exclamation_mark: Use the search bar to find them** Click *Next* once done.
 
 ![images](images/a6966fb42a24a42322f3a8f6b6fcef18.png)
 
