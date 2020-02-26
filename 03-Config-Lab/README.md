@@ -1,4 +1,4 @@
-#### AWS Config
+# LAB 3 - AWS Config
 
 1)  Go to the AWS Search Service bar and find *AWS Config*. Press *Get started*.
 

@@ -1,4 +1,4 @@
-### LAB 6 - AWS WAF
+# LAB 6 - AWS Web Application Firewall
 
 **:heavy_exclamation_mark: Before we start check on http://whatismyip.com what is your public IP. We will be using it to block access to our ALB with AWS WAF.**
 

@@ -1,3 +1,5 @@
+# LAB 0 - Prerequisites
+
 ### Creating an EC2 Key Pair
 
 First we need to create a key pair that will be used to establish an SSH

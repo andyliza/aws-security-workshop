@@ -1,3 +1,4 @@
+# LAB 5 - AWS Secrets Manager 
 #### To create and store your secret
 
 1) Sign in to the AWS Secrets Manager console

@@ -1,4 +1,4 @@
-### CloudTrail
+# LAB 1 - CloudTrail
 
 Create CloudTrail
 
