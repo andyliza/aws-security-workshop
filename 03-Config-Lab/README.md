@@ -16,9 +16,9 @@
 ![images](images/036c0dde57bac060954ae8fc4ff8c332.png)
 
 4)  Select the following 3 rules:
- Markup: * vpc-sg-open-only-to-authorized-ports
-         * cloudtrail-enabled 
-         * multi-region-cloudtrail-enabled
+* vpc-sg-open-only-to-authorized-ports
+* cloudtrail-enabled 
+* multi-region-cloudtrail-enabled
 
  Use the search bar to find them. Click
     *Next* once done.
