@@ -61,7 +61,7 @@ instance ID that has the alarm.
 
 ![images](images/yes-enable-dm.png)
 
-13)  After enbling the detail monitoring, return to the AWS Config Console and re-evaluate the rule that shows and alarm.
+13)  After enbling the detail monitoring, return to the AWS Config Console and re-evaluate the rule that shows the alarm.
 
 ![images](images/351dc23980958dc249d36d40ee4301e0.png)
 

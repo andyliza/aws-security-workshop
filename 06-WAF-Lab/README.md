@@ -1,10 +1,20 @@
 ### LAB 6 - AWS WAF
 
-Before we start check on http://whatismyip.com what is your public IP. We will be using it to block access to our ALB with AWS WAF.
+**:heavy_exclamation_mark: Before we start check on http://whatismyip.com what is your public IP. We will be using it to block access to our ALB with AWS WAF.**
 
 ![images](images/0-whatismyip.png)
 
 Take note of your public IP and write it down on a scratchpad.
+
+**:heavy_exclamation_mark: Take note also of the ALB DNS name**
+
+![images](images/alb-dns.png)
+
+And paste the DNS name in a new tab.
+
+![images](images/website.png)
+
+*Now that we have this information lets start configuring the WAF*
 
 1)  Got to the AWS WAF console and select *Go to AWS WAF*.
 
