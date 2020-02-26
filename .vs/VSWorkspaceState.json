@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\00-Prerequisites-Lab",
+    "\\00-Prerequisites-Lab\\images",
+    "\\02-GuardDuty-Lab",
+    "\\04-KMS-Lab",
+    "\\05-Secrets-Manager-Lab",
     "\\06-WAF-Lab",
-    "\\06-WAF-Lab\\images"
+    "\\06-WAF-Lab\\images",
+    "\\07-CT-Athena-Lab",
+    "\\Cloudformation"
   ],
+  "SelectedNode": "\\Cloudformation\\security-workshop.json",
   "PreviewInSolutionExplorer": false
 }
