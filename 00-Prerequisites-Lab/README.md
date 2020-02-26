@@ -11,7 +11,7 @@ connection.
 
 ![images](images/d3c32b52f680b2710b9bb1a93c1407c1.png)
 
-3)  Key in *TechShift-KeyPair* in the name box.
+3)  Key in *techshift-keypair* in the name box.
 
 ![images](images/c4490616d6988656078799a2695d6b01.png)
 
