@@ -48,7 +48,7 @@ connection.
 
 6) Click on *Open IDE*
 
-7)In the Terminal type teh following commands
+7)In the Terminal type the following commands
 
 ```
 git clone https://github.com/andyliza/aws-security-workshop.git
@@ -64,6 +64,7 @@ git clone https://github.com/andyliza/aws-security-workshop.git
 aws cloudformation create-stack --template-body file://./aws-security-workshop/Cloudformation/security-workshop.json --stack-name securitychallenge2020 --capabilities CAPABILITY_NAMED_IAM --parameters ParameterKey=InstanceType,ParameterValue=t2.small ParameterKey=KeyName,ParameterValue=techshift-keypair ParameterKey=RDSPassword,ParameterValue=techshift2019 ParameterKey=RDSUsername,ParameterValue=admin ParameterKey=VPCCIDR,ParameterValue=172.4.0.0/16
 
 ```
+![images/](AWSCloud9-Cloudformation.png)
 
 9) Once the installation begins you can check the status of the deployement using this command:
 
