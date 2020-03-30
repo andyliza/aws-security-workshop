@@ -1,9 +1,8 @@
-# AWS Security Workshop
+﻿# AWS Security Workshop
 ![main image](images/ws-image.png)
 
-## Introduction
-By doing this labs you will understand the basic services and security concepts that you need to implement in your AWS Account.
-
+## Sự giới thiệu
+Bằng cách thực hiện các phòng thí nghiệm này, bạn sẽ hiểu các dịch vụ cơ bản và khái niệm bảo mật mà bạn cần triển khai trong Tài khoản AWS của mình.
 
 [0. Prerequisites Lab](00-Prerequisites-Lab/README.md)
 
@@ -21,19 +20,19 @@ By doing this labs you will understand the basic services and security concepts 
 
 [7. Analyze CloudTrail logs with Athena Lab](07-CT-Athena-Lab/README.md)
 
-## How to login to your lab environment via Event Engine
+## Cách đăng nhập vào môi trường phòng thí nghiệm của bạn thông qua Event Engine
 
-Before starting the labs yo will receive a hash key to access your AWS environment. You will key in this hash key in Event Engine.
+Trước khi bắt đầu các phòng thí nghiệm, bạn sẽ nhận được khóa băm để truy cập vào môi trường AWS của bạn. Bạn sẽ nhập khóa băm này vào Event Engine.
 
-Event Engine address: https://dashboard.eventengine.run/login
+Địa chỉ url của Event Engine: https://dashboard.eventengine.run/login
 
 ![images](images/eventengine.png)
 
-Set up your team name if you wish. To access te console click on __AWS Console__
+Thiết lập tên nhóm của bạn nếu bạn muốn. Để truy cập bảng điều khiển te, nhấp vào __AWS Console__
 
 ![images](images/eeconsole.png)
 
-After that click on __Open Cosole__
+Sau đó nhấp vào __Open Cosole__
 
 ![images](images/eeopenconsole.png)
 
